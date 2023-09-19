@@ -17,6 +17,7 @@ class Mail {
         const transporter = nodemailer.createTransport({
             host: configs_1.default.host,
             port: configs_1.default.port,
+            service : "Gmail",
             secure: false,
             auth: {
                 user: configs_1.default.user,
